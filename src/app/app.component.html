@@ -1,0 +1,27 @@
+<div>
+  <div>
+    <input [(ngModel)]= view type="text" disabled="$1" placeholder="{{angka1}}{{operator}}{{angka2}}">
+  </div>
+  <div>
+    <button (click)="angka(1)">1</button>  
+    <button (click)="angka(2)">2</button>  
+    <button (click)="angka(3)">3</button>
+    <br>
+    <button (click)="angka(4)">4</button>  
+    <button (click)="angka(5)">5</button>  
+    <button (click)="angka(6)">6</button>
+    <br>
+    <button (click)="angka(7)">7</button>  
+    <button (click)="angka(8)">8</button>  
+    <button (click)="angka(9)">9</button>
+    <br>
+    <button (click)="oper(1)">-</button>  
+    <button (click)="oper(2)">+</button>  
+    <button (click)="oper(3)">*</button>
+    <button (click)="samadengan()">=</button>
+    <br>
+    <button (click)="reset()">reset</button><br>  
+    <a routerLink='/hasil'>klik</a>
+    <router-outlet> </router-outlet>
+  </div>
+</div>
