@@ -42,7 +42,7 @@ export class AppComponent  {
       this.hasil=parseInt(this.angka1)+parseInt(this.angka2);
     }else if(this.operator=='*')
     {
-      this.hasil=parseInt(this.angka1)+parseInt(this.angka2);
+      this.hasil=parseInt(this.angka1)*parseInt(this.angka2);
     }
     this.router.navigate(['/hasil',this.hasil]);
   }
